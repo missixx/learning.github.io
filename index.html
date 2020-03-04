@@ -264,14 +264,19 @@
                         Choose your perfect plan
                     </div>
                     <div class="plan__descr-user">
-                        <div class="plan__descr-user__title">
-                            You are
-                        </div>
-                        <div class="plan__descr-user__items">
-                            <div class="plan__descr-user__item">Individual</div>
-                            <div class="plan__descr-user__item">Company</div>
-                        </div>
+
                     </div>
+                    <div class="plan__descr-user__title">
+                        You are
+                    </div>
+                    <div class="plan__descr-user__items">
+                        <input type="radio" id="ChooseIndividual" class="inputUser" name="user" value="Individual"
+                            checked></input>
+                        <label for="ChooseIndividual" class="labelUser">Individual</label>
+                        <input type="radio" id="ChooseCompany" class="inputUser" name="user" value="Company"></input>
+                        <label for="ChooseCompany" class="labelUser">Company</label>
+                    </div>
+
                     <div class="plan__descr__text">
                         Thus much I thought proper to tell you in relation
                         to yourself, and to the trust I reposed in you.
@@ -281,8 +286,11 @@
                         <a href="#" target="_blank">Let‘s talk</a>
                     </div>
                 </div>
+
                 <div class="plan__items">
-                    <div class="plan-item">
+                    <input type="radio" class="inputPlan" id="ChooseStarter" name="plan" value="Starter" checked>
+                    </input>
+                    <label for="ChooseStarter" class="labelPlan">
                         <div class="plan-item__title">
                             Starter
                         </div>
@@ -299,8 +307,11 @@
                         <div class="plan-item__link">
                             Get started
                         </div>
-                    </div>
-                    <div class="plan-item">
+                    </label>
+
+                    <input type="radio" class="inputPlan" id="ChoosePro" name="plan" value="Pro">
+                    </input>
+                    <label for="ChoosePro" class="labelPlan">
                         <div class="plan-item__title">
                             Pro
                         </div>
@@ -318,9 +329,10 @@
                         <div class="plan-item__link">
                             Make me a Pro
                         </div>
-                    </div>
+                    </label>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <section class="subscribe">

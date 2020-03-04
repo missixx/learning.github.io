@@ -28,7 +28,7 @@ a {
   margin: 0 auto;
 }
 .header__inner {
- text-align: center;
+  text-align: center;
 }
 .header__top {
   display: flex;
@@ -90,12 +90,12 @@ a {
 .header__demo-btn {
   display: flex;
   justify-content: space-between;
-border: 1px solid #dadcde;
+  border: 1px solid #dadcde;
   border-radius: 30px;
   display: block;
   padding: 10px 40px;
 }
-.header__demo-btn a{
+.header__demo-btn a {
   margin-left: 10px;
 }
 .advantages {
@@ -209,16 +209,15 @@ border: 1px solid #dadcde;
   max-width: 1600px;
   margin: 0 auto;
 }
-.interface__title{
+.interface__title {
   padding-bottom: 30px;
 }
-.interface__line div{
+.interface__line div {
   height: 2px;
   background-color: #267df4;
   width: 50px;
   display: inline-block;
   margin-bottom: 20px;
-
 }
 .interface__subtitle {
   margin-bottom: 30px;
@@ -317,7 +316,7 @@ border: 1px solid #dadcde;
 .plan__descr-user__items {
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  width: 260px;
   border-radius: 30px;
   border: 1px solid #d5d6d7;
   margin-bottom: 75px;
@@ -327,10 +326,19 @@ border: 1px solid #dadcde;
   padding: 10px 30px;
   cursor: pointer;
 }
-.plan__descr-user__item:active {
+.inputUser {
+  display: none;
+}
+.labelUser {
+  padding: 10px 25px;
+}
+.inputUser:checked + .labelUser {
   color: #26292c;
   border-radius: 30px;
   background-color: #fff;
+}
+
+.plan__descr-user__item {
 }
 .plan__descr__text {
   margin-bottom: 45px;
@@ -352,15 +360,18 @@ border: 1px solid #dadcde;
   display: flex;
   width: 670px;
 }
-.plan-item {
+.inputPlan {
+  display: none;
+}
+.labelPlan {
   width: 340px;
   text-align: center;
   background-color: #ebebed;
   padding: 40px 0;
 }
-.plan-item:active {
+.inputPlan:checked + .labelPlan {
   background-color: #fff;
-  padding: 70px 0;
+  transform: scale(1.1);
 }
 .plan-item__title {
   font-size: 32px;
